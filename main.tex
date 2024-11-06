@@ -87,7 +87,7 @@
   {\begin{mdframed}[linewidth=0pt, backgroundcolor=pink!20]\small}
   {\end{mdframed}}
   
-\title{数据库系统笔记：SYSU2022人工智能学院课程}
+\title{数据库系统笔记：中大2022人工智能学院课程}
 \date{}
 
 \begin{document}
@@ -262,11 +262,10 @@
 
 \section*{10. 内存层级和文件组织$_{377}$}
 
-\section*{11. 索引$_{405}$}
+\section*{11. 索引的相关概念$_{405}$}
 
-\textbf{索引的概念和引入}
+\textbf{索引的引入}
 \begin{itemize}
-    \item 索引的评估：成本定义为最坏情况下的磁盘打开页数。
     \item ID排序+二分搜索：$\log(n)$。
     \item ID排序+索引条目：$<ID, page.No>$\lstinline{[Search-key|pointer]}
     \begin{itemize}
@@ -287,41 +286,43 @@
   \caption{tree index}
   \label{fig:my_label}
 \end{figure}
-    \item 主索引和辅助索引：
-    \begin{itemize}
-        \item 主索引{Primary index}：文件实际存放也是按照search key 排序的。其基于主键或唯一标识符构建索引，具有唯一性。
-        \item 辅助索引{Secondary index}：也称为二级索引。文件的实际存放不按照search key 排序。其基于非主属性构建索引，不具有唯一性。
-        \\ 1. 当检索许多记录时，辅助索引昂贵，因为磁盘不连续寻址耗时长。
-        \\ 2. 辅助索引常用于优化不涉及主键的查询。
-    \end{itemize}
-\begin{smallmdframed}
+\end{itemize}
+    
+\textbf{主索引和辅助索引}
+\begin{itemize}
+    \item 主索引{Primary index}：文件实际存放也是按照search key 排序的。其基于主键或唯一标识符构建索引，具有唯一性。
+    \item 辅助索引{Secondary index}：也称为二级索引。文件的实际存放不按照search key 排序。其基于非主属性构建索引，不具有唯一性。
+    \\ 1. 当检索许多记录时，辅助索引昂贵，因为磁盘不连续寻址耗时长。
+    \\ 2. 辅助索引常用于优化不涉及主键的查询。
+    \begin{smallmdframed}
         对于非排序属性（如账号、余额等），可以通过额外建立索引生成二级索引，从而提高查询效率。这样可以在不需要重新组织数据的情况下，实现对这些属性的有效查询。
-\end{smallmdframed}
-    \item 稀疏索引和密集索引
-    \begin{itemize}
-        \item 稀疏索引Sparse Index：仅包含某些search key。
-        \\稀疏检索：找到最后一个比K小key的index，然后向后遍历寻找K。
-        \item 密集索引Dense Index：包含所有search key。
-        \begin{figure}[ht]
-            \centering
-            \includegraphics[width=0.7\linewidth]{img/image.png}
-            \caption{稀疏索引和密集索引}
-            \label{fig:my_label}
-        \end{figure}
-    \end{itemize}
+    \end{smallmdframed}
+\end{itemize}
+
+\textbf{稀疏索引和密集索引} 
+\begin{itemize}
+    \item 稀疏索引Sparse Index：仅包含某些search key。
+    \\稀疏检索：找到最后一个比K小key的index，然后向后遍历寻找K。
+    \item 密集索引Dense Index：包含所有search key。
+    \begin{figure}[ht]
+        \centering
+        \includegraphics[width=0.7\linewidth]{img/image.png}
+        \caption{稀疏索引和密集索引}
+        \label{fig:my_label}
+    \end{figure}
 \end{itemize}
 
 \textbf{哈希索引}
 \begin{figure}[ht]
   \centering
-  \begin{minipage}[b]{0.45\textwidth}
+  \begin{minipage}[b]{0.5\textwidth}
     \centering
     \includegraphics[width=\linewidth]{img/屏幕截图 2024-11-05 160116.png}
     \caption{哈希索引结构}
     \label{fig:hash_structure}
   \end{minipage}%
   \hfill
-  \begin{minipage}[b]{0.45\textwidth}
+  \begin{minipage}[b]{0.5\textwidth}
     \centering
     \includegraphics[width=0.8\linewidth]{img/屏幕截图 2024-11-05 161453.png}
     \caption{哈希索引示例}
@@ -335,6 +336,7 @@
 
 \textbf{索引的评价指标}
 \begin{itemize}
+    \item 成本定义为最坏情况下的磁盘打开页数。
     \item 高效支持不同查询：例如，辅助索引（包括哈希）在范围检索表现很差，因为磁盘经常需要跨区寻址。
     \item 更新时间成本小：当文件被修改时，索引也必须更新。
     \item 额外存储成本小（即index本身的大小）：索引的大小应该比数据文件小得多。
@@ -351,8 +353,184 @@
     \begin{itemize}
         \item 对于密集索引：如果search key没有出现在index则插入。
         \item 对于稀疏索引：
+        \\1. 如果该索引为每个page维护有索引条目则不需要修改。
+        \\2. 否则要创建新page。当有新的block（page）创建的时候，将block的第一个search key加入index。
     \end{itemize}
 \end{itemize}
+
+\section*{12. 索引进阶：$B^+$树和动态哈希}
+
+\subsection*{12.1 $B^+$树：}
+
+\textbf{$B^+$树引入}
+\begin{itemize}
+    \item $B^+$树是一种特殊的平衡多路搜索树。
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.7\linewidth]{img/屏幕截图 2024-11-05 190832.png}
+  \caption{$B^+$树示意图}
+  \label{fig:my_label}
+\end{figure}
+    \item $B^+$树是所有商业DBMS中优序索引的默认实现。
+\end{itemize}
+
+\textbf{$B^+$树的主要特征}
+\begin{itemize}
+    \item 所有叶子节点都在同一层。
+    \item 非叶子节点只存储索引信息。
+    \item 叶子节点存储实际数据信息。
+    \item 叶子节点之间有指针连接：所有的叶子节点通过指针相互连接，形成一个双向链表。这种结构支持高效的范围查询和顺序扫描。
+\end{itemize}
+
+\textbf{$B^+$树的性质}
+\begin{itemize}
+    \item 从根到叶子的所有路径都具有相同的长度（a balanced tree）
+    \item $n$ 称为扇出 fanout（每个节点最多可有拥有指针数）：
+    \begin{enumerate}
+        \item 每个非叶节点都有数量在 $\lceil n/2 \rceil$ 到 $n$ 之间的指针
+        \item 每个叶节点存储数量为 $\lceil (n-1)/2 \rceil$ 和 $n-1$ 之间的数据值
+        \item 值 $\lceil (n-1)/2 \rceil$ 称为 order阶数（数据值的最小数量）
+\begin{smallmdframed}
+    1.和2. 都是在设定了子节点下限，从而维护树的平衡。
+    \\特别例子：如果根不是叶节点，则至少有两个子节点。如果根是叶节点，可以有0到$(n-1)$个数据值。
+\end{smallmdframed}
+    \end{enumerate}
+\end{itemize}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.6\linewidth]{img/屏幕截图 2024-11-05 194014.png}
+  \caption{$B^+$树节点示意图}
+  \label{fig:my_label}
+\end{figure}
+
+\textbf{$B^+$树查询}
+
+\begin{itemize}
+    \item 从所有记录中寻找$search\_{key}=a$的记录：
+    \\从根节点开始：
+    \begin{enumerate}
+        \item 在当前节点内部寻找$P_i$，满足$K_{i-1} \leq a < k_i$。
+        \item 跳到$P_i$指向的子节点。重复以上步骤直到叶节点。如果在叶结点中找不到，则该树不包含$search\_{key}=a$的记录。
+    \end{enumerate}
+\end{itemize}
+
+\textbf{$B^+$树插入}
+\begin{itemize}
+    \item 用键值k进行查询，得到叶节点L。
+    \item 将k插入到L中：
+    \begin{enumerate}
+        \item 如果L有空位，则插入完成。
+        \item 如果L无空位：将L分裂成$L_1$和$L_2$：
+        \begin{enumerate}
+            \item 将keys平分（奇数则左侧多一个）。
+            \item 更新L的父节点：插入$L_2$的最左侧数值。（中间键值往父节点插入）
+            \item 如果父节点也无空位，则由下往上递归更新节点。
+        \end{enumerate}
+    \end{enumerate}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\linewidth]{img/屏幕截图 2024-11-06 101536.png}
+  \caption{$B^+$树插入}
+  \label{fig:my_label}
+\end{figure}
+\end{itemize}
+
+\textbf{$B^+$树删除}
+\begin{itemize}
+    \item 用k值查询，得到其所在叶节点L。
+    \item 将k从L中移除：
+    \begin{enumerate}
+        \item 如果L有超过半数key，则结束。
+        \item 否则，从右侧兄弟节点索取一个key。
+        \begin{enumerate}
+            \item 如果右侧节点少于$\lceil (n-1)/2 \rceil +1$个节点，则合并两个节点：
+            \begin{itemize}
+                \item 合并后，从L的父节点删除指向L的键值。
+                \item 合并也可能发生连锁反映。
+            \end{itemize}
+        \end{enumerate}
+    \end{enumerate}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.8\linewidth]{img/屏幕截图 2024-11-06 103159.png}
+  \caption{$B^+$树删除}
+  \label{fig:my_label}
+\end{figure}
+\end{itemize}
+
+\textbf{$B^+$树文件组织结构}
+\begin{itemize}
+    \item 可以用$B^+$树索引解决索引退化问题。
+    \item 数据文件退化问题（碎片化）用$B^+$树来组织文件存储。要求：
+    \begin{itemize}
+        \item 叶节点存储数据本身。
+        \item 叶节点存储的最大记录数小于非叶节点的最大指针数。
+        \item （上面两条都是$B^+$树本身的要求）
+    \end{itemize}
+    \begin{smallmdframed}
+        在文件组织和数据库管理中，索引退化（Index Degradation）是指索引结构在长时间运行和频繁的插入、删除操作后，逐渐失去其优化效果，导致性能下降的问题。索引退化会影响查询性能、增加磁盘I/O操作次数，并可能导致其他性能问题。
+    \end{smallmdframed}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.7\linewidth]{img/屏幕截图 2024-11-06 104716.png}
+  \caption{$B^+$树文件组织结构}
+  \label{fig:my_label}
+\end{figure}
+\end{itemize}
+
+\subsection*{12.2 动态哈希：}
+
+\textbf{静态哈希}：Buckets数量是固定的。将搜索键值固定映射到某个Bucket。随着数据增长，由于过多的溢出导致该index的性能退化。
+
+\textbf{动态哈希}
+\begin{itemize}
+    \item Buckets数目可以动态调整。
+    \item 关键：哈希结果和数据位置中间加一层指针：
+    \begin{itemize}
+        \item 使用指向buckets的指针目录，通过将目录加倍来增加buckets数量（见下）。
+        \item 仅拆分溢出的存储bucket。
+        \item 只需要对指针进行整理，成本小很多。
+    \end{itemize}
+\end{itemize}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.8\linewidth]{img/屏幕截图 2024-11-06 112156.png}
+  \caption{静态与动态哈希对比}
+  \label{fig:my_label}
+\end{figure}
+
+\textbf{动态哈希函数的调整}
+\begin{itemize}
+    \item 掩码哈希：$f(value)=value\%(2^{DEPTH})$
+    \item 通过全局深度$GLOBAL\ DEPTH$和局部深度$LOCAL\ DEPTH$动态分裂桶。
+    \begin{itemize}
+        \item 全局深度：将一个元素映射到一个桶时需要看几位。
+        \item 局部深度：桶中所有元素相同尾数序列长度。
+        \item $Global\ depth = \max\{Local\ depth\}$
+        \item $Local\ depth = Global\ depth - \log_2{(lines)}$，其中$lines$为连接线段数量。
+    \end{itemize}
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.7\linewidth]{img/屏幕截图 2024-11-06 134741.png}
+  \caption{掩码哈希动态调整}
+  \label{fig:my_label}
+\end{figure}
+\end{itemize}
+
+\textbf{动态哈希删除}
+\begin{itemize}
+    \item 如果删除导致bucket变空，则将其与其镜像（譬如001和101）合并，合并后local depth-1。
+    \item 当因为一系列删除操作，导致指针目录的任意指针与其镜像指针均指向同一个bucket，则将整体指针目录缩减一半，global depth-1。
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\linewidth]{img/屏幕截图 2024-11-06 135908.png}
+  \caption{动态哈希全局目录缩减}
+  \label{fig:my_label}
+\end{figure}
+\end{itemize}
+
+
 \appendix
 
 \section*{附录1：相关习题或代码}
