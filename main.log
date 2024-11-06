@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.22)  6 NOV 2024 16:14
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.22)  6 NOV 2024 19:55
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1652,11 +1652,46 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 )
+(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen363
+\captionmargin=\dimen364
+\caption@leftmargin=\dimen365
+\caption@rightmargin=\dimen366
+\caption@width=\dimen367
+\caption@indent=\dimen368
+\caption@parindent=\dimen369
+\caption@hangindent=\dimen370
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count556
+\c@continuedfloat=\count557
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip186
+\f@nch@O@elh=\skip187
+\f@nch@O@erh=\skip188
+\f@nch@O@olh=\skip189
+\f@nch@O@orh=\skip190
+\f@nch@O@elf=\skip191
+\f@nch@O@erf=\skip192
+\f@nch@O@olf=\skip193
+\f@nch@O@orf=\skip194
+)
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
 
-Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 93.
+Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 114.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
@@ -1705,29 +1740,38 @@ LaTeX Warning: Label `fig:my_label' multiply defined.
 
 LaTeX Warning: Label `fig:my_label' multiply defined.
 
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1744,8 +1788,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' not found.
 
 No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 93.
-Package biblatex Info: Reference segment=0 on input line 93.
+Package biblatex Info: Reference section=0 on input line 114.
+Package biblatex Info: Reference segment=0 on input line 114.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1780,8 +1824,8 @@ Package biblatex Info: Reference segment=0 on input line 93.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count556
-Package hyperref Info: Link coloring OFF on input line 93.
+\c@lstlisting=\count558
+Package hyperref Info: Link coloring OFF on input line 114.
 (./main.out) (./main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
@@ -1791,46 +1835,48 @@ Package hyperref Info: Link coloring OFF on input line 93.
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 93.
+loading the todonotes package. on input line 114.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 File: sysu.jpg Graphic file (type bmp)
 <sysu.jpg>
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-01.
+22.
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-01.
+22.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-101.
+122.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-101.
+122.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12.045> on input line 101.
+(Font)              <12.045> on input line 122.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 101.
+(Font)              <8> on input line 122.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 101.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 101
+(Font)              <6> on input line 122.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 122
 .
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 101
+LaTeX Font Info:    Trying to load font information for U+msb on input line 122
 .
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1840,16 +1886,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.53937> on input line 107.
+(Font)              <10.53937> on input line 128.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 107.
+(Font)              <7> on input line 128.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 107.
+(Font)              <5> on input line 128.
 File: img/屏幕截图 2024-11-04 112858.png Graphic file (type bmp)
 <img/屏幕截图 2024-11-04 112858.png>
-Package mdframed Info: mdframed works in twoside mode on input line 123.
+Package mdframed Info: mdframed works in twoside mode on input line 144.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.03374> on input line 124.
+(Font)              <9.03374> on input line 145.
 File: img/屏幕截图 2024-11-04 134914.png Graphic file (type bmp)
 <img/屏幕截图 2024-11-04 134914.png>
 File: img/屏幕截图 2024-11-04 141626.png Graphic file (type bmp)
@@ -1857,13 +1903,38 @@ File: img/屏幕截图 2024-11-04 141626.png Graphic file (type bmp)
 [1
 
 ]
-Package mdframed Info: mdframed works in twoside mode on input line 179.
+Package mdframed Info: mdframed works in twoside mode on input line 200.
  [2]
-Package mdframed Info: mdframed works in twoside mode on input line 202.
-Package mdframed Info: mdframed works in twoside mode on input line 241.
+Package mdframed Info: mdframed works in twoside mode on input line 223.
+Package mdframed Info: mdframed works in twoside mode on input line 262.
  [3]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <15.05624> on input line 263.
+(Font)              <15.05624> on input line 284.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 284.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 284.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 284.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 286.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 286.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 286.
+
 
 Package fontspec Info: Could not resolve font "FangSong/BI" (it probably
 (fontspec)             doesn't exist).
@@ -1877,8 +1948,8 @@ Package fontspec Info: Could not resolve font "FangSong/I" (it probably
 (fontspec)             doesn't exist).
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-70.
- (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
+91.
+(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
@@ -1894,39 +1965,64 @@ Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
 
 File: img/屏幕截图 2024-11-05 142036.png Graphic file (type bmp)
 <img/屏幕截图 2024-11-05 142036.png>
-Package mdframed Info: mdframed works in twoside mode on input line 297.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 314.
  [4]
+Package mdframed Info: mdframed works in twoside mode on input line 318.
 File: img/image.png Graphic file (type bmp)
 <img/image.png>
 File: img/屏幕截图 2024-11-05 160116.png Graphic file (type bmp)
 <img/屏幕截图 2024-11-05 160116.png>
 
-Overfull \hbox (7.02547pt too wide) in paragraph at lines 320--321
+Overfull \hbox (7.02547pt too wide) in paragraph at lines 341--342
  [][] 
  []
 
 File: img/屏幕截图 2024-11-05 161453.png Graphic file (type bmp)
 <img/屏幕截图 2024-11-05 161453.png>
 [5]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 382.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 382.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 382.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 384.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 384.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 384.
+
 File: img/屏幕截图 2024-11-05 190832.png Graphic file (type bmp)
 <img/屏幕截图 2024-11-05 190832.png>
- [6]
-Package mdframed Info: mdframed works in twoside mode on input line 393.
+[6]
+Package mdframed Info: mdframed works in twoside mode on input line 414.
 File: img/屏幕截图 2024-11-05 194014.png Graphic file (type bmp)
 <img/屏幕截图 2024-11-05 194014.png>
  [7]
 File: img/屏幕截图 2024-11-06 101536.png Graphic file (type bmp)
 <img/屏幕截图 2024-11-06 101536.png>
 
-Overfull \hbox (7.02548pt too wide) in paragraph at lines 432--433
+Overfull \hbox (7.02548pt too wide) in paragraph at lines 453--454
  [][] 
  []
 
 File: img/屏幕截图 2024-11-06 103159.png Graphic file (type bmp)
 <img/屏幕截图 2024-11-06 103159.png>
-Package mdframed Info: mdframed works in twoside mode on input line 470.
+Package mdframed Info: mdframed works in twoside mode on input line 491.
 [8]
-Package mdframed Info: Not enough space on this page on input line 472.
 File: img/屏幕截图 2024-11-06 104716.png Graphic file (type bmp)
 <img/屏幕截图 2024-11-06 104716.png>
  [9]
@@ -1936,7 +2032,22 @@ File: img/屏幕截图 2024-11-06 134741.png Graphic file (type bmp)
 <img/屏幕截图 2024-11-06 134741.png>
 File: img/屏幕截图 2024-11-06 135908.png Graphic file (type bmp)
 <img/屏幕截图 2024-11-06 135908.png>
- [10] [11] (./main.aux)
+ [10]
+File: img/屏幕截图 2024-11-06 190224.png Graphic file (type bmp)
+<img/屏幕截图 2024-11-06 190224.png>
+ [11]
+File: img/屏幕截图 2024-11-06 191554.png Graphic file (type bmp)
+<img/屏幕截图 2024-11-06 191554.png>
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
+625.
+
+(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+File: img/屏幕截图 2024-11-06 193722.png Graphic file (type bmp)
+<img/屏幕截图 2024-11-06 193722.png>
+ [12]
+[13] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -1946,18 +2057,18 @@ L3 programming layer <2022/08/05>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: DE206F0AD8EF094906151137D7F99526;1014.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42283 strings out of 474773
- 896066 string characters out of 5753723
- 1948842 words of memory out of 5000000
- 63702 multiletter control sequences out of 15000+600000
- 650160 words of font info for 127 fonts, out of 8000000 for 9000
+ 43852 strings out of 474773
+ 926529 string characters out of 5753723
+ 1949842 words of memory out of 5000000
+ 65254 multiletter control sequences out of 15000+600000
+ 663429 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,9n,106p,1193b,1220s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,14n,117p,1193b,1224s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (11 pages).
+Output written on main.pdf (13 pages).

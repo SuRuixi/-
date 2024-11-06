@@ -33,7 +33,28 @@
 \usepackage{parskip}
 \usepackage{graphicx}
 \usepackage{tikz}
+\usepackage{caption}
+\usepackage{fancyhdr}  % 用于设置页眉和页脚
 
+% 设置页面布局
+\pagestyle{fancy}
+
+% 清除默认的页眉和页脚设置
+\fancyhf{}
+
+% 设置页眉
+\fancyhead[L]{\rightmark}  % 显示当前小节名称
+\fancyhead[R]{\thepage}    % 显示页码
+% 设置页眉线的长度
+\renewcommand{\headrulewidth}{0.4pt}  % 设置页眉线的粗细
+\renewcommand{\headwidth}{\textwidth} % 设置页眉线的长度为文本宽度
+% 重新定义 \chaptermark 和 \sectionmark
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+% 设置页脚
+\fancyfoot[C]{\thepage}  % 中间显示页码
+% 设置标题与图像之间的间距
+\setlength{\abovecaptionskip}{5pt}  % 标题在图像上方的间距
+\setlength{\belowcaptionskip}{0pt}  % 标题在图像下方的间距
 \fvset{breaklines=true,
     frame=lines
 }
@@ -86,7 +107,7 @@
 \newenvironment{smallmdframed}
   {\begin{mdframed}[linewidth=0pt, backgroundcolor=pink!20]\small}
   {\end{mdframed}}
-  
+ 
 \title{数据库系统笔记：中大2022人工智能学院课程}
 \date{}
 
@@ -103,7 +124,7 @@
 \end{minipage}
 \vspace{-0.8cm}
 
-\section*{9. 关系型数据库设计：3NF}
+\section{关系型数据库设计：3NF}
 数据库异常行为包括函数依赖下的冗余存储、异常更新、异常插入、异常删除，如下图（position$\rightarrow$salary）。
 \begin{figure}[ht]
   \centering
@@ -126,8 +147,8 @@
     计算一个属性集 $X$ 关于一组函数依赖 $F$ 的闭包 $X^+$ 的方法如下：
 
     \begin{enumerate}
-    \item \textbf{初始化}：设 $X^+$ 为 $X$ 的初始值。
-    \item \textbf{迭代}：重复以下步骤直到 $X^+$ 不再变化：
+    \item {初始化}：设 $X^+$ 为 $X$ 的初始值。
+    \item {迭代}：重复以下步骤直到 $X^+$ 不再变化：
         \begin{itemize}
             \item 对于每一个 $F$ 中的函数依赖 $A \rightarrow B$，
                 \begin{itemize}
@@ -260,9 +281,9 @@
     \item （$\dots$）
 \end{itemize}
 
-\section*{10. 内存层级和文件组织$_{377}$}
+\section{内存层级和文件组织$_{377}$}
 
-\section*{11. 索引的相关概念$_{405}$}
+\section{索引的相关概念$_{405}$}
 
 \textbf{索引的引入}
 \begin{itemize}
@@ -358,9 +379,9 @@
     \end{itemize}
 \end{itemize}
 
-\section*{12. 索引进阶：$B^+$树和动态哈希}
+\section{索引进阶：$B^+$树和动态哈希}
 
-\subsection*{12.1 $B^+$树：}
+\subsection{$B^+$树：}
 
 \textbf{$B^+$树引入}
 \begin{itemize}
@@ -478,7 +499,7 @@
 \end{figure}
 \end{itemize}
 
-\subsection*{12.2 动态哈希：}
+\subsection{动态哈希：}
 
 \textbf{静态哈希}：Buckets数量是固定的。将搜索键值固定映射到某个Bucket。随着数据增长，由于过多的溢出导致该index的性能退化。
 
@@ -530,7 +551,7 @@
 \end{figure}
 \end{itemize}
 
-\section*{13. 其它索引：多键访问}
+\section{其它索引：多键访问}
 
 \textbf{多键访问引入}
 \begin{itemize}
@@ -548,17 +569,78 @@
 
 \textbf{位图索引}
 \begin{itemize}
-	\item 位图索引旨在对多个键同时进行高效查询。
+	\item 位图索引（Bitmap）旨在对多个键同时进行高效查询。
 	\item 引入：
 	\begin{itemize}
 		\item 记录按照顺序编号为$(R_0, R_1, R_2, \dots)$，给定$n$则检索$R_n$的效率很高。
-		\item \textcolor{red}{仅对取值个数有限的属性特别适用。}
+		\item {仅对取值个数有限的属性特别适用。}
 	\end{itemize}
-	\item 
+	\item 最简单的形式：为属性（搜索键）的每个值都建有一个位图。
+	\begin{itemize}
+		\item 位图长度（bit个数）为record数量。
+		\item 每个位图代表某个属性的某个值在记录中的取值情况。
+	\end{itemize}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/屏幕截图 2024-11-06 190224.png}
+	\caption{位图索引}
+	\label{fig:my_label}
+\end{figure}
+\end{itemize}
+
+\section{查询过程}
+
+\textbf{查询过程的基本步骤}
+\begin{enumerate}
+	\item 解析和转化
+	\begin{itemize}
+		\item 将SQL查询语句转化为关系代数。
+		\item 解析器检查语法和表名。
+	\end{itemize}
+	\item 求解
+	\begin{itemize}
+		\item 查询执行引擎采用查询评估计划，执行该计划并返回查询答案。
+		\item 通过关于查询市场的统计数据制定更优的查询计划。
+	\end{itemize}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/屏幕截图 2024-11-06 191554.png}
+	\caption{查询架构}
+	\label{fig:my_label}
+\end{figure}
+\end{enumerate}
+
+\textbf{优化和成本评估}
+\begin{itemize}
+	\item Need special evalution-plan to solve algebra expression.
+	\begin{itemize}
+		\item 关系代数表达式有许多等效表达式。
+		\item 一个简单的关系运算可以有很多种算法实现。
+		\item 例子：
+		\begin{verbatim}
+			select B,D
+			from R,S
+			where R.A='C' and S.E=2 and R.C=S.C
+			#具有两种查询计划如下图所示。
+		\end{verbatim}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.7\linewidth]{img/屏幕截图 2024-11-06 193722.png}
+		\caption{等价查询计划例子（查询语句见笔记）}
+		\label{fig:my_label}
+	\end{figure}
+	\end{itemize}
+	\item 把时间成本简单计算为：在磁盘和主存之间读写page的总数量。
+	\begin{itemize}
+		\item 忽略顺序I/O和随机I/O之间的成本差异（忽略寻道）。
+		\item 忽略CPU成本。
+		\item 忽略将最终结果写入磁盘的成本。
+	\end{itemize}
+	\item 时间成本页依赖于主存中缓冲区的大小，更多的内存可以减少磁盘访问的需求。
 \end{itemize}
 
 \appendix
 
-\section*{附录1：相关习题或代码}
+\section{附录1：相关习题或代码}
 
 \end{document}
