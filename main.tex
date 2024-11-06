@@ -524,12 +524,38 @@
     \item 当因为一系列删除操作，导致指针目录的任意指针与其镜像指针均指向同一个bucket，则将整体指针目录缩减一半，global depth-1。
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=\linewidth]{img/屏幕截图 2024-11-06 135908.png}
+  \includegraphics[width=0.8\linewidth]{img/屏幕截图 2024-11-06 135908.png}
   \caption{动态哈希全局目录缩减}
   \label{fig:my_label}
 \end{figure}
 \end{itemize}
 
+\section*{13. 其它索引：多键访问}
+
+\textbf{多键访问引入}
+\begin{itemize}
+	\item 如何加快具有多个条件的查询记录？
+\begin{verbatim}
+	Select loan-number
+	From account
+	Where branch-name<"Perryridge" and Balance = 1000
+\end{verbatim}
+	\item 策略一：先后查询\\
+	先检查元组的branch-name然后在检查balance
+	\item 策略二：交集查询\\
+	先分别获取符合两种要求的指针，然后寻找指针的交集并获得记录。
+\end{itemize}
+
+\textbf{位图索引}
+\begin{itemize}
+	\item 位图索引旨在对多个键同时进行高效查询。
+	\item 引入：
+	\begin{itemize}
+		\item 记录按照顺序编号为$(R_0, R_1, R_2, \dots)$，给定$n$则检索$R_n$的效率很高。
+		\item \textcolor{red}{仅对取值个数有限的属性特别适用。}
+	\end{itemize}
+	\item 
+\end{itemize}
 
 \appendix
 

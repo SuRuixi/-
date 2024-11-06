@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.22)  6 NOV 2024 14:06
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.22)  6 NOV 2024 16:14
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1936,12 +1936,7 @@ File: img/屏幕截图 2024-11-06 134741.png Graphic file (type bmp)
 <img/屏幕截图 2024-11-06 134741.png>
 File: img/屏幕截图 2024-11-06 135908.png Graphic file (type bmp)
 <img/屏幕截图 2024-11-06 135908.png>
-
-Overfull \hbox (7.02548pt too wide) in paragraph at lines 527--528
- [][] 
- []
-
-[10] [11] (./main.aux)
+ [10] [11] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -1957,11 +1952,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42265 strings out of 474773
- 895068 string characters out of 5753723
+ 42283 strings out of 474773
+ 896066 string characters out of 5753723
  1948842 words of memory out of 5000000
- 63685 multiletter control sequences out of 15000+600000
- 650152 words of font info for 126 fonts, out of 8000000 for 9000
+ 63702 multiletter control sequences out of 15000+600000
+ 650160 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,9n,106p,1193b,1220s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
