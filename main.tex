@@ -41,7 +41,13 @@
 
 % 清除默认的页眉和页脚设置
 \fancyhf{}
-
+% 设置页脚
+\fancyfoot[L]{中山大学人工智能}  % 左侧自定义文本
+\fancyfoot[C]{数据库系统笔记}  % 中间自定义文本
+\fancyfoot[R]{苏睿熹}  % 右侧自定义文本
+% 设置页脚线的长度
+\renewcommand{\footrulewidth}{0.4pt}  % 设置页脚线的粗细
+\renewcommand{\headwidth}{\textwidth} % 设置页眉线的长度为文本宽度
 % 设置页眉
 \fancyhead[L]{\rightmark}  % 显示当前小节名称
 \fancyhead[R]{\thepage}    % 显示页码
@@ -50,8 +56,6 @@
 \renewcommand{\headwidth}{\textwidth} % 设置页眉线的长度为文本宽度
 % 重新定义 \chaptermark 和 \sectionmark
 \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
-% 设置页脚
-\fancyfoot[C]{\thepage}  % 中间显示页码
 % 设置标题与图像之间的间距
 \setlength{\abovecaptionskip}{5pt}  % 标题在图像上方的间距
 \setlength{\belowcaptionskip}{0pt}  % 标题在图像下方的间距
@@ -572,7 +576,8 @@
 	\item 位图索引（Bitmap）旨在对多个键同时进行高效查询。
 	\item 引入：
 	\begin{itemize}
-		\item 记录按照顺序编号为$(R_0, R_1, R_2, \dots)$，给定$n$则检索$R_n$的效率很高。
+		\item 记录按照顺序编号为$(R_0, R_1, R_2, \dots)$，给定$n$则检索$R_n$的效率
+		很高。
 		\item {仅对取值个数有限的属性特别适用。}
 	\end{itemize}
 	\item 最简单的形式：为属性（搜索键）的每个值都建有一个位图。
@@ -610,7 +615,7 @@
 \end{figure}
 \end{enumerate}
 
-\textbf{优化和成本评估}
+\textbf{优化引入和成本评估}
 \begin{itemize}
 	\item Need special evalution-plan to solve algebra expression.
 	\begin{itemize}
@@ -637,6 +642,40 @@
 		\item 忽略将最终结果写入磁盘的成本。
 	\end{itemize}
 	\item 时间成本页依赖于主存中缓冲区的大小，更多的内存可以减少磁盘访问的需求。
+\end{itemize}
+
+\textbf{选择操作的实现方式}
+\begin{itemize}
+	\item 检索满足$\sigma_{A=V}(r)$的一些可能算法：
+	\item 算法一：线性搜索
+	\begin{itemize}
+		\item 访问每个page并测试所有记录是否满足条件。
+		\item Cost estimate（扫描的磁盘页数）= $b_r$
+		\begin{itemize}
+			\item $b_r$标识包含关系表r中的记录的页数
+			\item 如果选择条件是关于键key的，则一旦访问到目标记录查询便可停止。
+			\item 平均成本为$\frac{b_r}{2}$
+		\end{itemize}
+	\end{itemize}
+	\item 算法二：二分查找
+	\begin{itemize}
+		\item 在选择文件排序所依据的属性上适用。
+		\item 假设该表的文件page是连续存储在磁盘上的。
+		\item 成本估算：
+		\begin{itemize}
+			\item 定位一个元组的成本$\lceil \log_2(b_r) \rceil$
+			\item 如果有多条记录满足选择条件，还需要算上跨越这些记录的page数。
+		\end{itemize}
+	\end{itemize}
+	\item 算法三：在候选键上的主索引
+	\begin{itemize}
+		\item 假设选择条件是作用在搜索键上的。
+		\item 检索满足相等条件的单个记录：Cost=$HT_i+1$ //$HT_i$为树的高度。
+	\end{itemize}
+	\item 算法四：在非键上的主索引
+	\begin{itemize}
+		\item 
+	\end{itemize}
 \end{itemize}
 
 \appendix
