@@ -644,9 +644,8 @@
 	\item 时间成本页依赖于主存中缓冲区的大小，更多的内存可以减少磁盘访问的需求。
 \end{itemize}
 
-\textbf{选择操作的实现方式}
+\textbf{选择操作的实现方式}：检索满足$\sigma_{A=V}(r)$的一些可能算法：
 \begin{itemize}
-	\item 检索满足$\sigma_{A=V}(r)$的一些可能算法：
 	\item 算法一：线性搜索
 	\begin{itemize}
 		\item 访问每个page并测试所有记录是否满足条件。
@@ -674,8 +673,10 @@
 	\end{itemize}
 	\item 算法四：在非键上的主索引
 	\begin{itemize}
-		\item 
+		\item 检索满足条件的多个记录，记录在连续的页面上。
+		\item Cost = $HT_i+\text{包含检索记录的页数}$
 	\end{itemize}
+	\item 算法五：
 \end{itemize}
 
 \appendix
