@@ -739,8 +739,8 @@
 
 \end{smallmdframed}
 	\item[$\Rightarrow$] \textbf{涉及比较式}的查询：算法六$\rightarrow$七
-	\item 实现$\sigma_{A\leq V}(r)$或$\sigma_{A\geq V}(r)$同样可以用线性扫描、二分
-	搜索和索引。
+	\item[$\rightarrow$] 实现$\sigma_{A\leq V}(r)$或$\sigma_{A\geq V}(r)$同样可以
+	用线性扫描、二分搜索和索引。
 	\item 算法六：主索引下的比较查询\hfill \emph{primary index, comparison}
 	\begin{itemize}
 		\item[$\rightarrow$] Relation is sorted on A.
@@ -762,7 +762,28 @@
 	\item 算法八：单键索引的交集查询 \hfill \emph{conjunctive selection using one 
 	index}
 	\begin{itemize}
-		\item 
+		\item 对于其中一个条件$\theta_i$，选择算法一$\rightarrow$七中的低成本算法进
+		行索引，将元组提取到主存后测试记录对其他条件的满足性，不满足则丢弃。
+	\end{itemize}
+	\item 算法九：多键索引的交集查询\hfill \emph{conjunctive selection using 
+	multiple-key index}
+	\begin{itemize}
+		\item 如果可行，也可以选择使用的符合（多键）索引。
+	\end{itemize}
+	\item 算法十：标识符的交集索引\hfill \emph{conjunctive selection by 
+	intersection of identifiers}
+	\begin{itemize}
+		\item 对每个条件使用相应的索引，并对所有获得的记录指针集合取交集。
+		\item 如果某些条件没有合适索引，则在读到内存后再对他们进行该条件的测试。
+	\end{itemize}
+	\item[$\rightarrow$] \textbf{并集}$\sigma_{\theta1 \vee \theta2 \vee 
+	\cdots \theta_n}(r)$查询：算法十一
+	\item 算法十一：标识符的并集索引\hfill \emph{conjunctive selection by 
+	union of identifiers}
+	\begin{itemize}
+		\item 如果所有条件都有创建索引，则使用。对每个条件使用相应索引，并对所有获得的
+		指针集取并集，然后从文件中获取记录。
+		\item 如果只有部分条件或者没有条件有可用索引，使用线性扫描。
 	\end{itemize}
 \end{itemize}
 
