@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}关系型数据库设计：3NF}{1}{section.1}%
+\contentsline {section}{\numberline {2}内存层级和文件组织$_{377}$}{4}{section.2}%
+\contentsline {section}{\numberline {3}索引的相关概念$_{405}$}{4}{section.3}%
+\contentsline {section}{\numberline {4}索引进阶：$B^+$树和动态哈希}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}$B^+$树：}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}动态哈希：}{9}{subsection.4.2}%
+\contentsline {section}{\numberline {5}其它索引：多键访问}{11}{section.5}%
+\contentsline {section}{\numberline {6}查询过程}{11}{section.6}%
+\contentsline {section}{\numberline {A}附录1：习题}{15}{appendix.A}%

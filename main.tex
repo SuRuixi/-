@@ -35,16 +35,53 @@
 \usepackage{tikz}
 \usepackage{caption}
 \usepackage{fancyhdr}  % 用于设置页眉和页脚
-
+\usepackage{tocloft}  % 用于自定义目录
+% 设置 hyperref 的一些选项
+\hypersetup{
+	colorlinks=true,  % 使用颜色而不是框
+	linkcolor=myblue,   % 内部链接的颜色
+	urlcolor=cyan,    % URL 链接的颜色
+	citecolor=green,  % 引用链接的颜色
+	bookmarks=true,   % 创建书签
+	pdfauthor={苏睿熹},  % 作者
+	pdftitle={数据库系统笔记},  % 标题
+	pdfsubject={人工智能},  % 主题
+}
+% 设置目录标题
+\renewcommand{\contentsname}{\textbf{目录与索引}}
+% 调整各级标题的缩进
+\setlength{\cftsecindent}{0em}  % 小节缩进
+\setlength{\cftsubsecindent}{2em}  % 子小节缩进
+\setlength{\cftsubsubsecindent}{4em}  % 子子小节缩进
+% 调整各级标题的编号宽度
+\setlength{\cftsecnumwidth}{2.5em}  % 小节编号宽度
+\setlength{\cftsubsecnumwidth}{3.5em}  % 子小节编号宽度
+\setlength{\cftsubsubsecnumwidth}{4.5em}  % 子子小节编号宽度
+% 调整点线样式
+\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}  % 小节点线
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftsubsecdotsep}}  % 子小节点线
+\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftsubsubsecdotsep}}  % 子子小节
+%点线
+% 设置点线间隔
+\renewcommand{\cftsecdotsep}{\cftdot}  % 小节点线间隔
+\renewcommand{\cftsubsecdotsep}{\cftdot}  % 子小节点线间隔
+\renewcommand{\cftsubsubsecdotsep}{\cftdot}  % 子子小节点线间隔
+% 设置字体样式
+\renewcommand{\cftsecfont}{\bfseries}  % 小节字体
+\renewcommand{\cftsubsecfont}{\bfseries}  % 子小节字体
+\renewcommand{\cftsubsubsecfont}{\bfseries}  % 子子小节字体
+% 设置页码字体样式
+\renewcommand{\cftsecpagefont}{\bfseries}  % 小节页码字体
+\renewcommand{\cftsubsecpagefont}{\bfseries}  % 子小节页码字体
+\renewcommand{\cftsubsubsecpagefont}{\bfseries}  % 子子小节页码字体
 % 设置页面布局
 \pagestyle{fancy}
-
 % 清除默认的页眉和页脚设置
 \fancyhf{}
 % 设置页脚
-\fancyfoot[L]{中山大学人工智能}  % 左侧自定义文本
+\fancyfoot[L]{苏睿熹}  % 左侧自定义文本
 \fancyfoot[C]{数据库系统笔记}  % 中间自定义文本
-\fancyfoot[R]{苏睿熹}  % 右侧自定义文本
+\fancyfoot[R]{跳转到\hyperref[toc]{目录}}  % 右侧自定义文本
 % 设置页脚线的长度
 \renewcommand{\footrulewidth}{0.4pt}  % 设置页脚线的粗细
 \renewcommand{\headwidth}{\textwidth} % 设置页眉线的长度为文本宽度
@@ -706,16 +743,28 @@
 	搜索和索引。
 	\item 算法六：主索引下的比较查询\hfill \emph{primary index, comparison}
 	\begin{itemize}
-		\item 也就是说Ralation is sorted on A。
+		\item[$\rightarrow$] Relation is sorted on A.
 		\item For $\sigma_{A\geq V}(r)$ 
 		使用索引查找第一个满足并访问之后所有页面。
 		\item For $\sigma_{A\leq V}(r)$ 从第一个开始访问直到检索大于$V$则停止。
 	\end{itemize}
+	\item 算法七：二级索引下的比较查询\hfill \emph{secondary index, comparison}
+	\begin{itemize}
+		\item[$\rightarrow$] Relation is \textcolor{red}{not} sorted on A.
+		\item For $\sigma_{A\geq V}(r)$ 使用索引查询第一个索引条目并往后访问，根据
+		条目得到满足条件记录的指针，根据指针访问记录。
+		\item For $\sigma_{A\leq V}(r)$ 从头扫描索引的叶页面（leaf page），从中查找
+		指向记录的指针，直到第一个条目大于$V$。
+	\end{itemize}
+	\item 
 	
 \end{itemize}
 
+\newpage
+\tableofcontents  % 生成目录
+\label{toc}
 \appendix
 
-\section{附录1：相关习题或代码}
+\section{附录1：习题}
 
 \end{document}
