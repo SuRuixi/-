@@ -86,12 +86,16 @@
 }
 % 定义蓝色
 \definecolor{myblue}{RGB}{0, 100, 225}
+\definecolor{mypink}{RGB}{255,105,180}
 % 重新定义 \maketitle 命令
 \pretitle{\begin{center}\LARGE\bfseries\color{blue}}
 \posttitle{\end{center}}
 % 重定义 \textbf 命令
 \let\oldtextbf\textbf
 \renewcommand{\textbf}[1]{\textcolor{myblue}{\oldtextbf{#1}}}
+% 重定义 \emph 命令
+\let\oldemph\emph
+\renewcommand{\emph}[1]{\textcolor{mypink}{\oldemph{#1}}}
 \titleformat{\section}
   {\color{myblue}\bfseries\Large}
   {\thesection}
@@ -646,7 +650,7 @@
 
 \textbf{选择操作的实现方式}：检索满足$\sigma_{A=V}(r)$的一些可能算法：
 \begin{itemize}
-	\item 算法一：线性搜索
+	\item 算法一：线性搜索\hfill \emph{linear search}
 	\begin{itemize}
 		\item 访问每个page并测试所有记录是否满足条件。
 		\item Cost estimate（扫描的磁盘页数）= $b_r$
@@ -656,7 +660,7 @@
 			\item 平均成本为$\frac{b_r}{2}$
 		\end{itemize}
 	\end{itemize}
-	\item 算法二：二分查找
+	\item 算法二：二分查找\hfill \emph{binary search}
 	\begin{itemize}
 		\item 在选择文件排序所依据的属性上适用。
 		\item 假设该表的文件page是连续存储在磁盘上的。
@@ -666,17 +670,48 @@
 			\item 如果有多条记录满足选择条件，还需要算上跨越这些记录的page数。
 		\end{itemize}
 	\end{itemize}
-	\item 算法三：在候选键上的主索引
+	\item[$\Rightarrow$] 
+	假设选择条件是\textbf{作用在搜索键上}的：算法三$\rightarrow$五
+	\item 算法三：在候选键上的主索引\hfill \emph{primary tree index on candidate 
+	key, equality}
 	\begin{itemize}
-		\item 假设选择条件是作用在搜索键上的。
 		\item 检索满足相等条件的单个记录：Cost=$HT_i+1$ //$HT_i$为树的高度。
 	\end{itemize}
-	\item 算法四：在非键上的主索引
+	\item 算法四：在非键上的主索引\hfill \emph{primary tree index on non-key, 
+	equality}
 	\begin{itemize}
 		\item 检索满足条件的多个记录，记录在连续的页面上。
 		\item Cost = $HT_i+\text{包含检索记录的页数}$
 	\end{itemize}
-	\item 算法五：
+	\item 算法五：在搜索键上的二级索引\hfill \emph{equality on search-key of 
+	secondary index}
+	\begin{itemize}
+		\item 如果搜索键是候选键，即检索单个记录：Cost=$HT_i+1$。
+		\item 否则需要检索多个记录：Cost = $HT_i+\text{包含检索记录的页数}$。
+		\begin{itemize}
+			\item 记录可能位于不同的页面，成本昂贵。
+			\item 最坏的情况：每条检索的记录都需要一页访问。
+		\end{itemize}
+	\end{itemize}
+\begin{smallmdframed}
+	如何区分搜索键和候选键：\hfill 主索引：文件按照search key存放
+	\begin{itemize}
+		\item 搜索键指的是查询的属性。\hfill 二级索引：不按照search key 存放，不唯一
+		\item 候选键是关系表的属性，具有唯一性。
+	\end{itemize}
+
+\end{smallmdframed}
+	\item[$\Rightarrow$] \textbf{涉及比较式}的查询：算法六$\rightarrow$七
+	\item 实现$\sigma_{A\leq V}(r)$或$\sigma_{A\geq V}(r)$同样可以用线性扫描、二分
+	搜索和索引。
+	\item 算法六：主索引下的比较查询\hfill \emph{primary index, comparison}
+	\begin{itemize}
+		\item 也就是说Ralation is sorted on A。
+		\item For $\sigma_{A\geq V}(r)$ 
+		使用索引查找第一个满足并访问之后所有页面。
+		\item For $\sigma_{A\leq V}(r)$ 从第一个开始访问直到检索大于$V$则停止。
+	\end{itemize}
+	
 \end{itemize}
 
 \appendix
