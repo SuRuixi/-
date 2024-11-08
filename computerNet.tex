@@ -39,6 +39,10 @@
 \usepackage{tocloft}  % 用于自定义目录
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
+% 定义蓝色
+\definecolor{myblue}{RGB}{0, 100, 225}
+\definecolor{MYBLUE}{RGB}{0, 100, 225}
+\definecolor{mypink}{RGB}{255,0,250}
 % 设置 hyperref 的一些选项
 \hypersetup{
 	colorlinks=true,  % 使用颜色而不是框
@@ -124,9 +128,6 @@
   language=Python,      % 语言类型
   basicstyle=\tt, %使用teletype字体
 }
-% 定义蓝色
-\definecolor{myblue}{RGB}{0, 100, 225}
-\definecolor{mypink}{RGB}{255,0,250}
 % 重新定义 \maketitle 命令
 \pretitle{\begin{center}\LARGE\bfseries\color{blue}}
 \posttitle{\end{center}}
@@ -160,6 +161,7 @@
 \date{}
 
 \begin{document}
+	
 \begin{minipage}[t]{\textwidth}
     \vspace{-0.5cm}
     \begin{center}
@@ -192,7 +194,7 @@
 \textbf{数据链路层所处的地位}：
 下图展示了数据链路层在数据流动中的地位和层级。
 
-\begin{figure}
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.7\linewidth]{img/screenshot001}
 	\caption{数据流动图}
@@ -202,14 +204,26 @@
 \textbf{点对点信道相关概念}
 \begin{itemize}
 	\item[$\rightarrow$] 某些概念对广播信号也是适用的。
-	\item \emph{链路}：一个节点到相邻节点的一段物理链路。
+	\item \emph{链路}：一个节点到相邻节点的一段物理线路，通常是通信路径的一部分。
+	\item \emph{数据链路}：链路+通信协议=数据链路。\\所以也称链路为“物理链路”，数据链
+	路为“逻辑链路”。
+	\item \emph{帧}：数据链路层对等实体之间进行逻辑通信的协议数据单元。\\数据链路层把
+	网络层的数据封装成帧并发送，收到帧后提取数据并上交到网络层。
 \end{itemize}
+
+\textbf{为网络层提供服务}：数据链路层为网络层提供三种服务：
+\begin{itemize}
+	\item \emph{无确认的无连接服务}：
+	\item \emph{有确认的无连接服务}：
+	\item \emph{有确认的面向连接服务}：
+\end{itemize}
+
 
 \tableofcontents
 
-\newpage
 \appendix
-\section{附录1：作业{\footnotesize 苏睿熹22330100}}
+\section{附录1：协议表}
 
 \label{toc}
+
 \end{document}

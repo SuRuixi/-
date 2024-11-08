@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.22)  8 NOV 2024 14:19
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.22)  8 NOV 2024 14:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1872,17 +1872,17 @@ ext;"
 (fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-
 text;"
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 52.
+Package hyperref Info: Option `colorlinks' set `true' on input line 56.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 52.
+(hyperref)                setting the option has no effect on input line 56.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
 
-Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 162.
+Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 163.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
@@ -1897,54 +1897,54 @@ runsystem(del computerNet.aex)...executed.
 (./computerNet.aux)
 \openout1 = `computerNet.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 162.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 163.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 162.
+ 163.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 162.
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 162.
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 162.
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 162.
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 162.
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 162.
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 163.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-162.
+163.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 162.
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 162.
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 163.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 162.
+ 163.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 162.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 163.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 162.
+e 163.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    ... okay on input line 163.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1961,8 +1961,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'computerNet.bbl' not found.
 
 No file computerNet.bbl.
-Package biblatex Info: Reference section=0 on input line 162.
-Package biblatex Info: Reference segment=0 on input line 162.
+Package biblatex Info: Reference section=0 on input line 163.
+Package biblatex Info: Reference segment=0 on input line 163.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1998,9 +1998,9 @@ Package biblatex Info: Reference segment=0 on input line 162.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count563
-LaTeX Info: Command `\dddot' is already robust on input line 162.
-LaTeX Info: Command `\ddddot' is already robust on input line 162.
-Package hyperref Info: Link coloring ON on input line 162.
+LaTeX Info: Command `\dddot' is already robust on input line 163.
+LaTeX Info: Command `\ddddot' is already robust on input line 163.
+Package hyperref Info: Link coloring ON on input line 163.
 (./computerNet.out) (./computerNet.out)
 \@outlinefile=\write7
 \openout7 = `computerNet.out'.
@@ -2010,43 +2010,43 @@ Package hyperref Info: Link coloring ON on input line 162.
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 162.
+loading the todonotes package. on input line 163.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 File: sysu.jpg Graphic file (type bmp)
 <sysu.jpg>
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-70.
+72.
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 170
+LaTeX Font Info:    Trying to load font information for U+msa on input line 172
 .
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 170
+LaTeX Font Info:    Trying to load font information for U+msb on input line 172
 .
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-170.
+172.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-170.
+172.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-170.
+172.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
@@ -2056,30 +2056,30 @@ LaTeX Warning: No \author given.
 
 File: img/screenshot001.png Graphic file (type bmp)
 <img/screenshot001.png>
-(./computerNet.toc)
+(./computerNet.toc [1
+
+])
 \tf@toc=\write8
 \openout8 = `computerNet.toc'.
 
- [1
-
-] [2] (./computerNet.aux)
+ [2] (./computerNet.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `computerNet.out' has not changed.
-(rerunfilecheck)             Checksum: C9A619ADB2CA757BAC72A5383A78B789;357.
+(rerunfilecheck)             Checksum: 4BEB8068A86B649FC08E3375EE39DFEE;301.
 Package logreq Info: Writing requests to 'computerNet.run.xml'.
 \openout1 = `computerNet.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45516 strings out of 474773
- 934137 string characters out of 5753723
- 1941842 words of memory out of 5000000
- 66912 multiletter control sequences out of 15000+600000
- 602545 words of font info for 144 fonts, out of 8000000 for 9000
+ 45542 strings out of 474773
+ 936055 string characters out of 5753723
+ 1947842 words of memory out of 5000000
+ 66940 multiletter control sequences out of 15000+600000
+ 602529 words of font info for 142 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,12n,117p,1200b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,11n,117p,1200b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on computerNet.pdf (2 pages).
