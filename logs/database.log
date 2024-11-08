@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.22)  8 NOV 2024 14:42
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.22)  8 NOV 2024 20:57
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1893,7 +1893,7 @@ tabase.aex <nul: /p x=^%~$PATH:i>> database.aex)...executed.
 
 runsystem(del database.aex)...executed.
 
-(./database.aux
+(logs/database.aux
 
 LaTeX Warning: Label `fig:my_label' multiply defined.
 
@@ -2048,7 +2048,7 @@ Package biblatex Info: Reference segment=0 on input line 162.
 LaTeX Info: Command `\dddot' is already robust on input line 162.
 LaTeX Info: Command `\ddddot' is already robust on input line 162.
 Package hyperref Info: Link coloring ON on input line 162.
-(./database.out) (./database.out)
+(logs/database.out) (logs/database.out)
 \@outlinefile=\write7
 \openout7 = `database.out'.
 
@@ -2061,8 +2061,8 @@ loading the todonotes package. on input line 162.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-File: sysu.jpg Graphic file (type bmp)
-<sysu.jpg>
+File: img/sysu.jpg Graphic file (type bmp)
+<img/sysu.jpg>
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 70.
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -2248,14 +2248,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [13]
 Package mdframed Info: mdframed works in twoside mode on input line 736.
 
-[14] (./database.toc)
+[14] (logs/database.toc)
 \tf@toc=\write8
 \openout8 = `database.toc'.
 
  [15]
 File: img/图片1.png Graphic file (type bmp)
 <img/图片1.png>
- [16] (./database.aux)
+ [16] (logs/database.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -2271,12 +2271,12 @@ Package logreq Info: Writing requests to 'database.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46143 strings out of 474773
- 956676 string characters out of 5753723
+ 46144 strings out of 474773
+ 956763 string characters out of 5753723
  1950842 words of memory out of 5000000
  67499 multiletter control sequences out of 15000+600000
  668045 words of font info for 219 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,15n,117p,1197b,1222s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on database.pdf (16 pages).
+Output written on logs/database.pdf (16 pages).

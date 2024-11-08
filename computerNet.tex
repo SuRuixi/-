@@ -51,7 +51,7 @@
 	citecolor=green,  % 引用链接的颜色
 	bookmarks=true,   % 创建书签
 	pdfauthor={苏睿熹},  % 作者
-	pdftitle={数据库系统笔记},  % 标题
+	pdftitle={计算机网络笔记},  % 标题
 	pdfsubject={人工智能},  % 主题
 }
 % 设置目录标题
@@ -87,7 +87,7 @@
 \fancyhf{}
 % 设置页脚
 \fancyfoot[L]{苏睿熹}  % 左侧自定义文本
-\fancyfoot[C]{数据库系统笔记}  % 中间自定义文本
+\fancyfoot[C]{计算机网络笔记}  % 中间自定义文本
 \fancyfoot[R]{跳转到\hyperref[toc]{目录}}  % 右侧自定义文本
 % 设置页脚线的长度
 \renewcommand{\footrulewidth}{0.4pt}  % 设置页脚线的粗细
@@ -166,7 +166,7 @@
     \vspace{-0.5cm}
     \begin{center}
         \vspace{-1.5cm} % 减少间距
-        \includegraphics[width=0.2\textwidth]{sysu.jpg}\\
+        \includegraphics[width=0.2\textwidth]{img/sysu.jpg}\\
         \vspace{-1.5cm} % 减少间距
     \end{center}
     \maketitle
@@ -319,6 +319,33 @@
 \end{itemize}
 
 \textbf{零比特填充法}
+\begin{itemize}
+	\item 使用比特流\lstinline|01111110|标识开始与结束。
+	\item 
+	发送前：扫描整个数据字段，每遇到5个连续的\lstinline|1|就自动插入\lstinline|0|。
+	\item 收到后：每遇到5个连续的\lstinline|1|就自动删除后面紧跟的\lstinline|0|。
+	\item 优点：容易用硬件实现，性能优于字符填充法。HDLC协议使用。
+	\begin{figure}[th]
+		\centering
+		\includegraphics[width=0.7\linewidth]{img/screenshot112}
+		\caption{零比特填充法}
+		\label{fig:screenshot112}
+	\end{figure}
+\end{itemize}
+
+\textbf{违规编码法}
+\begin{itemize}
+	\item 采用违规的物理层变法作为定界符。
+	\begin{itemize}
+		\item 比如在曼切斯特编码中，合法编码有：“高-低”电平（0）和“低-高”电平（1）。违
+		规编
+		码有“高-高”和“低-低”。
+	\end{itemize}
+	\item 优点：违规编码法不需要任何填充技术实现透明传输。局域网IEEE 
+	802标准使用。
+\end{itemize}
+
+\subsection{差错控制}
 
 \tableofcontents
 
