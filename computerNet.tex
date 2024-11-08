@@ -178,8 +178,7 @@
 
 \subsection{数据链路层的功能}
 
-数据链路层实现\emph{帧}在一段链路或一个网络中进行传输。\\数据链路层协议有多
-种，有\textbf{三个基本问题}是共同的：封装成帧、透明传输和差错检验。
+数据链路层实现\emph{帧}在一段链路或一个网络中进行传输。
 
 数据链路层使用的\textbf{信道}主要有两种：
 \begin{itemize}
@@ -211,13 +210,115 @@
 	网络层的数据封装成帧并发送，收到帧后提取数据并上交到网络层。
 \end{itemize}
 
-\textbf{为网络层提供服务}：数据链路层为网络层提供三种服务：
+\textbf{为网络层提供服务}：数据链路层为网络层提供三种服务如下。
 \begin{itemize}
 	\item \emph{无确认的无连接服务}：
+	\begin{itemize}
+		\item 不需要先建立链路连接和返回确认。
+		\item 数据传输的可靠性由高层负责。
+		\item 适用于如以太网之类误码率低的信道。
+	\end{itemize}
 	\item \emph{有确认的无连接服务}：
+	\begin{itemize}
+		\item 不需要先建立链路连接。
+		\item 目的主机收到帧之后需要返回确认。源主机在规定时间内未收到则超时重传。
+		\item 适用于如无线通信之类误码率较高的信道。
+	\end{itemize}
 	\item \emph{有确认的面向连接服务}：
+	\begin{itemize}
+		\item 帧传输过程分为三个阶段：建立链路$\rightarrow$传输帧 $\rightarrow$释放
+		链路。
+		\item 目的主机收到帧后需要返回确认。
+		\item 适用于可靠性要求较高的场合。
+		\item \textbf{链路管理}
+		\begin{itemize}
+			\item 链路层连接的建立、维持和释放过程称为链路管理。
+			\item 首先确认对方是否处于就绪状态，并交换一些必要的信息进行初始化。
+		\end{itemize}
+	\end{itemize}
 \end{itemize}
 
+数据链路层协议有多种，有\textbf{三个基本问题}是共同的：封装成帧、透明传输和差错检验。
+
+\textbf{封装成帧}
+\begin{itemize}
+	\item 在一段数据的前后分别添加首部和尾部。
+	\item \emph{帧长}：数据长度+尾部长度+首部长度。
+	\begin{itemize}
+		\item 帧的数据长度要尽可能大于首尾部长度，从而使得信息传输效率更高。
+		\item 
+		帧越长，传输差错的概率越大。
+		\item 每种链路层协议都规定了数据部分的长度上限：\emph{最
+		大传送单元}。
+	\end{itemize}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.7\linewidth]{img/screenshot002}
+		\caption{HDLC标准帧格式}
+		\label{fig:screenshot002}
+	\end{figure}
+	\item 
+	\emph{帧定界}：首部和尾部中控制信息的一种，确定帧的界限。使得接收方可区
+	分出帧的起始和终止（\emph{帧同步}）。在HDLC协议中，用标志位F来标志帧的开始和结束。
+\end{itemize}
+
+\textbf{透明传输}
+\begin{itemize}
+	\item 在数据帧中恰好出现了与帧定界符相同的比特组合（F），可能会误以为传输结束。
+	\item 用透明传输解决该问题：无论传输什么样的数据都无差错。
+\end{itemize}
+
+\textbf{差错检验}
+\begin{itemize}
+	\item 将错误分为位错和帧错：
+	\begin{itemize}
+		\item \emph{位错}：某bit出现差错，通常采用\emph{循环冗余检验}（CRC）发现位错
+		。
+		\item \emph{帧错}：丢失、重复、失序等错误。
+	\end{itemize}
+\end{itemize}
+
+\textbf{流量控制（非基本问题）}
+\begin{itemize}
+	\item 限制发送方的发送速率，使其不超过接收方的接受能力。
+	\item 在OSI体系架构中，数据链路层具有流量控制能力。
+	\item 在TCP/IP体系结构中，流量控制被转移到了传输层。
+	\begin{itemize}
+		\item 数据链路层：相邻结点流量控制。
+		\item 传输层：源到目的端之间的流量控制。
+	\end{itemize}
+\end{itemize}
+
+\subsection{组帧（封装成帧）}
+
+数据链路层之所以要将数据封装成帧，是为了以帧为单位处理异常（重发等）。
+\\组帧主要解决帧定界、帧同步、透明传输等问题。
+\\常见的组帧方法通常有四种。
+
+\textbf{字符计数法}
+\begin{itemize}
+	\item 适用帧首部第一个计数字符来记录该帧字节数。
+	\item 多米诺骨牌效应：只要有一帧出错，全盘崩溃。
+\end{itemize}
+
+\textbf{字节填充法}
+\begin{itemize}
+	\item 使用特定字节来定界一帧的开始与结束。
+	\begin{figure}[th]
+		\centering
+		\includegraphics[width=0.7\linewidth]{img/screenshot111}
+		\caption{字节填充法}
+		\label{fig:screenshot111}
+	\end{figure}
+	\item 以上图为例：一共有三种特殊字符SOH、EOT、ESC。
+	\begin{itemize}
+		\item SOE：标识帧开始。
+		\item EOT：标识帧结束。
+		\item ESC：标识转义。
+	\end{itemize}
+\end{itemize}
+
+\textbf{零比特填充法}
 
 \tableofcontents
 

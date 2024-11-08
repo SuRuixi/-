@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.22)  8 NOV 2024 14:37
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.22)  8 NOV 2024 19:39
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2056,30 +2056,36 @@ LaTeX Warning: No \author given.
 
 File: img/screenshot001.png Graphic file (type bmp)
 <img/screenshot001.png>
-(./computerNet.toc [1
+[1
 
-])
+]
+File: img/screenshot002.png Graphic file (type bmp)
+<img/screenshot002.png>
+ [2]
+File: img/screenshot111.png Graphic file (type bmp)
+<img/screenshot111.png>
+ (./computerNet.toc)
 \tf@toc=\write8
 \openout8 = `computerNet.toc'.
 
- [2] (./computerNet.aux)
+ [3] [4] (./computerNet.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `computerNet.out' has not changed.
-(rerunfilecheck)             Checksum: 4BEB8068A86B649FC08E3375EE39DFEE;301.
+(rerunfilecheck)             Checksum: CF68EE3A1998A992BF805C394FBFC802;422.
 Package logreq Info: Writing requests to 'computerNet.run.xml'.
 \openout1 = `computerNet.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45542 strings out of 474773
- 936055 string characters out of 5753723
+ 45681 strings out of 474773
+ 943694 string characters out of 5753723
  1947842 words of memory out of 5000000
- 66940 multiletter control sequences out of 15000+600000
- 602529 words of font info for 142 fonts, out of 8000000 for 9000
+ 67078 multiletter control sequences out of 15000+600000
+ 602521 words of font info for 141 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,11n,117p,1200b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,11n,117p,1200b,863s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on computerNet.pdf (2 pages).
+Output written on computerNet.pdf (4 pages).

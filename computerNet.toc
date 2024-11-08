@@ -1,3 +1,4 @@
 \contentsline {section}{\numberline {1}数据链路层}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}数据链路层的功能}{1}{subsection.1.1}%
-\contentsline {section}{\numberline {A}附录1：协议表}{2}{appendix.A}%
+\contentsline {subsection}{\numberline {1.2}组帧（封装成帧）}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {A}附录1：协议表}{4}{appendix.A}%
