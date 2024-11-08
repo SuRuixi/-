@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.22)  8 NOV 2024 10:29
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.22)  8 NOV 2024 14:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**computerNet.tex
+(./computerNet.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -730,7 +730,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@listing=\toks24
 \c@listing=\count469
 )
-runsystem(if not exist _minted-main mkdir _minted-main)...executed.
+runsystem(if not exist _minted-computerNet mkdir _minted-computerNet)...execute
+d.
 
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
@@ -1652,7 +1653,117 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 )
-(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/newtxmath.sty
+Package: newtxmath 2024/03/06 v1.742
+
+`newtxmath' v1.742, 2024/03/06 Math macros based originally on txfonts (msharpe
+) (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/oberdiek/centernot.sty
+Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
+)
+\tx@cntz=\count556
+ (d:/software/texlive/texlive/2024/texmf-dist/tex/generic/kastrup/binhex.tex)
+\tx@Isdigit=\count557
+\tx@IsAlNum=\count558
+\tx@tA=\toks50
+\tx@tB=\toks51
+\tx@su=\read6
+
+amsthm NOT loaded
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 393.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> OT1/lmr/m/n on input line 393.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> OT1/lmr/m/n on input line 393.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/m/n --> OT1/lmr/b/n on input line 394.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 401.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> OT1/lmss/m/n on input line 401.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> OT1/lmss/m/n on input line 401.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/m/n --> OT1/lmss/b/n on input line 403.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 410.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> OT1/lmr/m/it on input line 410.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/lmr/bx/it --> OT1/lmr/m/it on input line 410.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 411.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 411.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 411.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 413.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> OT1/lmr/b/n on input line 413.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/lmr/bx/n --> OT1/lmr/b/n on input line 413.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/lmr/m/it --> OT1/lmr/b/it on input line 414.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 417.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 519.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/lmm/m/it --> OML/ntxmi/m/it on input line 519.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/lmm/b/it --> OML/ntxmi/m/it on input line 519.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/ntxmi/m/it --> OML/ntxmi/b/it on input line 520.
+\symlettersA=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
+(Font)                  U/ntxmia/m/it --> U/ntxmia/b/it on input line 565.
+LaTeX Font Info:    Redeclaring math alphabet \mathfrak on input line 567.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 587.
+LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 587.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/lmsy/m/n --> LMS/ntxsy/m/n on input line 587.
+LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 587.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/lmsy/b/n --> LMS/ntxsy/m/n on input line 587.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  LMS/ntxsy/m/n --> LMS/ntxsy/b/n on input line 588.
+\symAMSm=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `AMSm' in version `bold'
+(Font)                  U/ntxsym/m/n --> U/ntxsym/b/n on input line 613.
+\symsymbolsC=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
+(Font)                  U/ntxsyc/m/n --> U/ntxsyc/b/n on input line 634.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 647.
+LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 6
+47.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> LMX/ntxexx/m/n on input line 647.
+LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 647
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> LMX/ntxexx/m/n on input line 647.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  LMX/ntxexx/m/n --> LMX/ntxexx/b/n on input line 648.
+\symlargesymbolsTXA=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `largesymbolsTXA' in version `bold'
+
+(Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 662.
+\tx@sbptoks=\toks52
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 885.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 886.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 887.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 888.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 893.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 894.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 896.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 898.
+LaTeX Font Info:    Redeclaring math delimiter \arrowvert on input line 902.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 903.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 974.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 975.
+LaTeX Font Info:    Redeclaring math accent \vec on input line 2048.
+LaTeX Info: Redefining \Bbbk on input line 2838.
+LaTeX Info: Redefining \not on input line 2986.
+) (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
@@ -1667,8 +1778,8 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen370
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count556
-\c@continuedfloat=\count557
+\c@caption@flags=\count559
+\c@continuedfloat=\count560
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -1716,8 +1827,8 @@ Package tocloft Info: The document has section divisions on input line 51.
 \cftbeforefigskip=\skip274
 \cftfigindent=\skip275
 \cftfignumwidth=\skip276
-\c@lofdepth=\count558
-\c@lotdepth=\count559
+\c@lofdepth=\count561
+\c@lotdepth=\count562
 \cftbeforelottitleskip=\skip277
 \cftafterlottitleskip=\skip278
 \cftbeforetabskip=\skip279
@@ -1729,97 +1840,111 @@ Package tocloft Warning: \@starttoc has already been redefined; tocloft bailing
  out. on input line 1156.
 
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 49.
+
+Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;+smcp;mapping=tex-tex
+t;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"Times
+(fontspec)             New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-
+text;"
+
+Package hyperref Info: Option `colorlinks' set `true' on input line 52.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 49.
+(hyperref)                setting the option has no effect on input line 52.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
 
-Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 159.
+Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 162.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
 
 Package biblatex Warning: Load 'inputenc' before biblatex.
 
-runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > ma
-in.aex <nul: /p x=^%~$PATH:i>> main.aex)...executed.
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > co
+mputerNet.aex <nul: /p x=^%~$PATH:i>> computerNet.aex)...executed.
 
-runsystem(del main.aex)...executed.
+runsystem(del computerNet.aex)...executed.
 
-(./main.aux
+(./computerNet.aux)
+\openout1 = `computerNet.aux'.
 
-LaTeX Warning: Label `fig:my_label' multiply defined.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 162.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
+ 162.
 
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
+(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/omlntxmi.fd
+File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-\openout1 = `main.aux'.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 162.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
+162.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
+(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/untxexa.fd
+File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
+)
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 162.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
+ 162.
+
+(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/lmsntxsy.fd
+File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
+)
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 162.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
+e 162.
+
+(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/lmxntxexx.fd
+File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
+)
+LaTeX Font Info:    ... okay on input line 162.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1830,14 +1955,14 @@ Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `main.bcf'.
+\openout3 = `computerNet.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
+Package biblatex Info: ... file 'computerNet.bbl' not found.
 
-No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 159.
-Package biblatex Info: Reference segment=0 on input line 159.
+No file computerNet.bbl.
+Package biblatex Info: Reference section=0 on input line 162.
+Package biblatex Info: Reference segment=0 on input line 162.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1872,260 +1997,89 @@ Package biblatex Info: Reference segment=0 on input line 159.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count560
-Package hyperref Info: Link coloring ON on input line 159.
-(./main.out) (./main.out)
+\c@lstlisting=\count563
+LaTeX Info: Command `\dddot' is already robust on input line 162.
+LaTeX Info: Command `\ddddot' is already robust on input line 162.
+Package hyperref Info: Link coloring ON on input line 162.
+(./computerNet.out) (./computerNet.out)
 \@outlinefile=\write7
-\openout7 = `main.out'.
+\openout7 = `computerNet.out'.
 
 
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 159.
+loading the todonotes package. on input line 162.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 File: sysu.jpg Graphic file (type bmp)
 <sysu.jpg>
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-67.
+70.
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-67.
-
-(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-167.
-
-(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-167.
-
-(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12.045> on input line 167.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 167.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 167.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 167
+LaTeX Font Info:    Trying to load font information for U+msa on input line 170
 .
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 167
+LaTeX Font Info:    Trying to load font information for U+msb on input line 170
 .
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
+170.
+
+(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/untxmia.fd
+File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
+170.
+
+(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/untxsym.fd
+File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
+)
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
+170.
+
+(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+)
 
 LaTeX Warning: No \author given.
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.53937> on input line 173.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 173.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 173.
-File: img/屏幕截图 2024-11-04 112858.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-04 112858.png>
-Package mdframed Info: mdframed works in twoside mode on input line 189.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.03374> on input line 190.
-File: img/屏幕截图 2024-11-04 134914.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-04 134914.png>
-File: img/屏幕截图 2024-11-04 141626.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-04 141626.png>
-[1
-
-]
-Package mdframed Info: mdframed works in twoside mode on input line 245.
- [2]
-Package mdframed Info: mdframed works in twoside mode on input line 268.
-Package mdframed Info: mdframed works in twoside mode on input line 307.
- [3]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <15.05624> on input line 329.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 329.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 329.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 329.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 331.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 331.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 331.
-
-
-Package fontspec Info: Could not resolve font "FangSong/BI" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "FangSong/B" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "FangSong/I" (it probably
-(fontspec)             doesn't exist).
-
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-36.
-(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-
-Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
-(fontspec)             with options [Script={CJK}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-
-File: img/屏幕截图 2024-11-05 142036.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-05 142036.png>
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 359.
- [4]
-Package mdframed Info: mdframed works in twoside mode on input line 363.
-File: img/image.png Graphic file (type bmp)
-<img/image.png>
-File: img/屏幕截图 2024-11-05 160116.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-05 160116.png>
-
-Overfull \hbox (7.02547pt too wide) in paragraph at lines 386--387
- [][] 
- []
-
-File: img/屏幕截图 2024-11-05 161453.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-05 161453.png>
-[5]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 427.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 427.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 427.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 429.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 429.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 429.
-
-File: img/屏幕截图 2024-11-05 190832.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-05 190832.png>
-[6]
-Package mdframed Info: mdframed works in twoside mode on input line 459.
-File: img/屏幕截图 2024-11-05 194014.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-05 194014.png>
- [7]
-File: img/屏幕截图 2024-11-06 101536.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-06 101536.png>
-
-Overfull \hbox (7.02548pt too wide) in paragraph at lines 498--499
- [][] 
- []
-
-File: img/屏幕截图 2024-11-06 103159.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-06 103159.png>
-Package mdframed Info: mdframed works in twoside mode on input line 536.
-[8]
-File: img/屏幕截图 2024-11-06 104716.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-06 104716.png>
- [9]
-File: img/屏幕截图 2024-11-06 112156.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-06 112156.png>
-File: img/屏幕截图 2024-11-06 134741.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-06 134741.png>
-File: img/屏幕截图 2024-11-06 135908.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-06 135908.png>
- [10]
-File: img/屏幕截图 2024-11-06 190224.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-06 190224.png>
- [11]
-File: img/屏幕截图 2024-11-06 191554.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-06 191554.png>
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-671.
-
-(d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-File: img/屏幕截图 2024-11-06 193722.png Graphic file (type bmp)
-<img/屏幕截图 2024-11-06 193722.png>
- [12]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13]
-Package mdframed Info: mdframed works in twoside mode on input line 733.
-
-[14] (./main.toc)
+File: img/screenshot001.png Graphic file (type bmp)
+<img/screenshot001.png>
+(./computerNet.toc)
 \tf@toc=\write8
-\openout8 = `main.toc'.
+\openout8 = `computerNet.toc'.
 
- [15] (./main.aux)
+ [1
+
+] [2] (./computerNet.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 063F7C2D1CC3E42C452CB71B6DFBADE2;974.
-Package logreq Info: Writing requests to 'main.run.xml'.
-\openout1 = `main.run.xml'.
+Package rerunfilecheck Info: File `computerNet.out' has not changed.
+(rerunfilecheck)             Checksum: C9A619ADB2CA757BAC72A5383A78B789;357.
+Package logreq Info: Writing requests to 'computerNet.run.xml'.
+\openout1 = `computerNet.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44171 strings out of 474773
- 933283 string characters out of 5753723
- 1949842 words of memory out of 5000000
- 65563 multiletter control sequences out of 15000+600000
- 667708 words of font info for 139 fonts, out of 8000000 for 9000
+ 45516 strings out of 474773
+ 934137 string characters out of 5753723
+ 1941842 words of memory out of 5000000
+ 66912 multiletter control sequences out of 15000+600000
+ 602545 words of font info for 144 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,14n,117p,1193b,1224s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,12n,117p,1200b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (15 pages).
+Output written on computerNet.pdf (2 pages).

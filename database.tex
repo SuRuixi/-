@@ -33,9 +33,12 @@
 \usepackage{parskip}
 \usepackage{graphicx}
 \usepackage{tikz}
+\usepackage{newtxmath}
 \usepackage{caption}
 \usepackage{fancyhdr}  % 用于设置页眉和页脚
 \usepackage{tocloft}  % 用于自定义目录
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
 % 设置 hyperref 的一些选项
 \hypersetup{
 	colorlinks=true,  % 使用颜色而不是框
@@ -785,15 +788,59 @@
 		指针集取并集，然后从文件中获取记录。
 		\item 如果只有部分条件或者没有条件有可用索引，使用线性扫描。
 	\end{itemize}
-	\item[$\rightarrow$] \textbf{取否}$\sigma_{-\theta}(r)$查询：算法十二\hfill 
+	\item[$\rightarrow$] 
+	\textbf{取否}$\sigma_{\neg\theta}(r)$查询：算法十二\hfill 
 	\emph{Negation}
+	\begin{itemize}
+		\item 对文件使用线性扫描。
+		\item 如果$\neg\theta$记录很少，并且有关于且适用$\theta$的索引，则使用索引
+		查找$\neg\theta$的记录。
+	\end{itemize}
 \end{itemize}
 
+\textbf{外部排序}\hfill \emph{External Sorting}
+\begin{itemize}
+	\item 引入：
+	\begin{itemize}
+		\item 在执行选择操作时，有时候需要对记录排序。如升序查询\lstinline|asc|和降序
+		查询\lstinline|desc|。
+		\item 数据体量大，分pages存储，无法把全部记录装到主存后进行快排。
+		\item 需要使用外部排序从而最小化磁盘读写。
+	\end{itemize}
+\end{itemize}
+
+\tableofcontents
+
 \newpage
-\tableofcontents  % 生成目录
-\label{toc}
 \appendix
+\section{附录1：作业二{\footnotesize 苏睿熹22330100}}
+\textbf{Part 1. Convert the ERD into the corresponding database schema:}
 
-\section{附录1：习题}
+(Underline the primary keys and foreign keys.)
 
+对于同一种情况（如关系的映射），课件中可能讨论了多种做法，如果课件中没有明确说哪种会最优
+的，皆以ppt出现的第一种做法为准。
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/图片1.png}
+	\caption{Part 1 ERD}
+	\label{fig:my_label}
+\end{figure}
+
+\begin{enumerate}
+	\item 为强实体集构建相应的relations：
+	\begin{itemize}
+		\item BRANCH：\underline{branch-name} $\|$ branch-city $\|$ assets
+		\item CUSTOMER：\underline{customer-id} $\|$ customer-name $\|$ 
+		customer-street $\|$ customer-city
+		\item EMPLOYEE：\underline{employee-id} $\|$ dependent-name $\|$ 
+		employment-length 
+		$\|$ start-date $\|$ telephone-number $\|$ employee-name
+		\item LOAN：\underline{loan-number} $\|$ amount
+		\item ACCOUNT：\underline{account-number} $\|$ balance
+	\end{itemize}
+\end{enumerate}
+
+\label{toc}
 \end{document}

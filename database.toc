@@ -4,6 +4,6 @@
 \contentsline {section}{\numberline {4}索引进阶：$B^+$树和动态哈希}{6}{section.4}%
 \contentsline {subsection}{\numberline {4.1}$B^+$树：}{6}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}动态哈希：}{9}{subsection.4.2}%
-\contentsline {section}{\numberline {5}其它索引：多键访问}{11}{section.5}%
-\contentsline {section}{\numberline {6}查询过程}{11}{section.6}%
-\contentsline {section}{\numberline {A}附录1：习题}{15}{appendix.A}%
+\contentsline {section}{\numberline {5}其它索引：多键访问}{10}{section.5}%
+\contentsline {section}{\numberline {6}查询过程}{12}{section.6}%
+\contentsline {section}{\numberline {A}附录1：作业二{\footnotesize 苏睿熹22330100}}{16}{appendix.A}%
