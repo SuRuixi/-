@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.22)  9 NOV 2024 10:25
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.22)  9 NOV 2024 11:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**computerNet.tex
-(./computerNet.tex
+**os.tex
+(./os.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -730,8 +730,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@listing=\toks24
 \c@listing=\count469
 )
-runsystem(if not exist _minted-computerNet mkdir _minted-computerNet)...execute
-d.
+runsystem(if not exist _minted-os mkdir _minted-os)...executed.
 
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
@@ -1872,79 +1871,79 @@ ext;"
 (fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-
 text;"
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 56.
+Package hyperref Info: Option `colorlinks' set `true' on input line 52.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 56.
+(hyperref)                setting the option has no effect on input line 52.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
 )
 
-Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 163.
+Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 162.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
 
 Package biblatex Warning: Load 'inputenc' before biblatex.
 
-runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > co
-mputerNet.aex <nul: /p x=^%~$PATH:i>> computerNet.aex)...executed.
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > os
+.aex <nul: /p x=^%~$PATH:i>> os.aex)...executed.
 
-runsystem(del computerNet.aex)...executed.
+runsystem(del os.aex)...executed.
 
-(logs/computerNet.aux)
-\openout1 = `computerNet.aux'.
+(logs/os.aux)
+\openout1 = `os.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 163.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 162.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 163.
+ 162.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 162.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-163.
+162.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 162.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 163.
+ 162.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 162.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 163.
+e 162.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    ... okay on input line 162.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1955,14 +1954,14 @@ Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `computerNet.bcf'.
+\openout3 = `os.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'computerNet.bbl' not found.
+Package biblatex Info: ... file 'os.bbl' not found.
 
-No file computerNet.bbl.
-Package biblatex Info: Reference section=0 on input line 163.
-Package biblatex Info: Reference segment=0 on input line 163.
+No file os.bbl.
+Package biblatex Info: Reference section=0 on input line 162.
+Package biblatex Info: Reference segment=0 on input line 162.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1998,55 +1997,55 @@ Package biblatex Info: Reference segment=0 on input line 163.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count563
-LaTeX Info: Command `\dddot' is already robust on input line 163.
-LaTeX Info: Command `\ddddot' is already robust on input line 163.
-Package hyperref Info: Link coloring ON on input line 163.
-(logs/computerNet.out) (logs/computerNet.out)
+LaTeX Info: Command `\dddot' is already robust on input line 162.
+LaTeX Info: Command `\ddddot' is already robust on input line 162.
+Package hyperref Info: Link coloring ON on input line 162.
+(logs/os.out) (logs/os.out)
 \@outlinefile=\write7
-\openout7 = `computerNet.out'.
+\openout7 = `os.out'.
 
 
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 163.
+loading the todonotes package. on input line 162.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 File: img/sysu.jpg Graphic file (type bmp)
 <img/sysu.jpg>
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-72.
+71.
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 172
+LaTeX Font Info:    Trying to load font information for U+msa on input line 171
 .
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 172
+LaTeX Font Info:    Trying to load font information for U+msb on input line 171
 .
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-172.
+171.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-172.
+171.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-172.
+171.
 
 (d:/software/texlive/texlive/2024/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
@@ -2054,63 +2053,45 @@ File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 
 LaTeX Warning: No \author given.
 
-File: img/screenshot001.png Graphic file (type bmp)
-<img/screenshot001.png>
-[1
+File: img/ascreenshot001.png Graphic file (type bmp)
+<img/ascreenshot001.png>
+(logs/os.toc [1
 
-]
-File: img/screenshot002.png Graphic file (type bmp)
-<img/screenshot002.png>
- [2]
-File: img/screenshot111.png Graphic file (type bmp)
-<img/screenshot111.png>
-
-Package fontspec Info: Could not resolve font "FangSong/BI" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "FangSong/B" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "FangSong/I" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
-(fontspec)             with options [Script={CJK}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-
-File: img/screenshot112.png Graphic file (type bmp)
-<img/screenshot112.png>
- (logs/computerNet.toc [3])
+])
 \tf@toc=\write8
-\openout8 = `computerNet.toc'.
+\openout8 = `os.toc'.
 
- [4] (logs/computerNet.aux)
+
+
+! Package xcolor Error: Undefined color `MYBLUE'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.250 \end{document}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[2] (logs/os.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
-Package rerunfilecheck Info: File `computerNet.out' has not changed.
-(rerunfilecheck)             Checksum: F5B5824381A8C7F37B274C94ACDFA9C3;511.
-Package logreq Info: Writing requests to 'computerNet.run.xml'.
-\openout1 = `computerNet.run.xml'.
+Package rerunfilecheck Info: File `os.out' has not changed.
+(rerunfilecheck)             Checksum: EB791CFF4CCC5666FBABFFE95F5AED54;261.
+Package logreq Info: Writing requests to 'os.run.xml'.
+\openout1 = `os.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45855 strings out of 474773
- 945907 string characters out of 5753723
- 1947842 words of memory out of 5000000
- 67240 multiletter control sequences out of 15000+600000
- 602561 words of font info for 146 fonts, out of 8000000 for 9000
+ 45567 strings out of 474773
+ 937414 string characters out of 5753723
+ 1955842 words of memory out of 5000000
+ 66964 multiletter control sequences out of 15000+600000
+ 602529 words of font info for 142 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,11n,117p,1200b,1217s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,11n,117p,1191b,948s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on logs/computerNet.pdf (4 pages).
+Output written on logs/os.pdf (2 pages).
