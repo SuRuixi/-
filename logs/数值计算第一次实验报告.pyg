@@ -1,0 +1,25 @@
+
+# 定义计算 Psi(x) 的函数
+def compute_psi(x, error_threshold=1e-6):
+k = 1  # 初始化项数
+sum_psi = 0.0  # 初始化 Psi(x) 的值
+term = 1.0  # 初始化项的值，确保第一次循环进入
+
+# 当当前项的绝对值大于误差阈值时继续累加
+while abs(term) > error_threshold:
+term = 1 / (k * (k + x))  # 计算当前项
+sum_psi += term  # 将当前项加到 Psi(x) 的和中
+k += 1  # 增加项数
+
+return sum_psi  # 返回计算的 Psi(x)
+
+# 输入要计算的 x 值列表
+x_values = [0.0, 0.5, 1.0, np.sqrt(2), 10.0, 100.0, 300.0]
+
+# 对每个 x 值计算 Psi(x)
+results = {x: compute_psi(x) for x in x_values}
+
+# 输出结果
+for x, psi in results.items():
+print(f"x = {x:.6f}, Psi(x) = {psi:.6f}")
+

@@ -1,0 +1,202 @@
+% This document is compiled using pdfLaTeX
+% You can switch XeLaTeX/pdfLaTeX/LaTeX/LuaLaTeX in Settings
+
+\documentclass[b5paper, twoside]{article}
+\usepackage{ctex}
+\usepackage{csquotes} % 对于智能引用符号
+\usepackage[backend=biber,style=numeric]{biblatex} % 使用biblatex和biber
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{minted}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{marginnote}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{todonotes}
+\usepackage[utf8]{inputenc}
+\usepackage{mdframed}
+\usepackage{multicol}
+\usepackage{url} % 加载url包
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{array} % 提供>{...}功能
+\usepackage{booktabs} % 提供更好的表格线条
+\usepackage{lipsum} % 用于生成占位文本
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{newtxmath}
+\usepackage{caption}
+\usepackage{fancyhdr}  % 用于设置页眉和页脚
+\usepackage{tocloft}  % 用于自定义目录
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+% 定义蓝色
+\definecolor{myblue}{RGB}{0, 100, 225}
+\definecolor{MYBLUE}{RGB}{0, 100, 225}
+\definecolor{mypink}{RGB}{255,105,180}
+% 设置 hyperref 的一些选项
+\hypersetup{
+	colorlinks=true,  % 使用颜色而不是框
+	linkcolor=myblue,   % 内部链接的颜色
+	urlcolor=cyan,    % URL 链接的颜色
+	citecolor=green,  % 引用链接的颜色
+	bookmarks=true,   % 创建书签
+	pdfauthor={苏睿熹},  % 作者
+	pdftitle={数值计算方法笔记},  % 标题
+	pdfsubject={人工智能},  % 主题
+}
+% 设置目录标题
+\renewcommand{\contentsname}{\textbf{目录与索引}}
+% 调整各级标题的缩进
+\setlength{\cftsecindent}{0em}  % 小节缩进
+\setlength{\cftsubsecindent}{2em}  % 子小节缩进
+\setlength{\cftsubsubsecindent}{4em}  % 子子小节缩进
+% 调整各级标题的编号宽度
+\setlength{\cftsecnumwidth}{2.5em}  % 小节编号宽度
+\setlength{\cftsubsecnumwidth}{3.5em}  % 子小节编号宽度
+\setlength{\cftsubsubsecnumwidth}{4.5em}  % 子子小节编号宽度
+% 调整点线样式
+\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}  % 小节点线
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftsubsecdotsep}}  % 子小节点线
+\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftsubsubsecdotsep}}  % 子子小节
+%点线
+% 设置点线间隔
+\renewcommand{\cftsecdotsep}{\cftdot}  % 小节点线间隔
+\renewcommand{\cftsubsecdotsep}{\cftdot}  % 子小节点线间隔
+\renewcommand{\cftsubsubsecdotsep}{\cftdot}  % 子子小节点线间隔
+% 设置字体样式
+\renewcommand{\cftsecfont}{\bfseries}  % 小节字体
+\renewcommand{\cftsubsecfont}{\bfseries}  % 子小节字体
+\renewcommand{\cftsubsubsecfont}{\bfseries}  % 子子小节字体
+% 设置页码字体样式
+\renewcommand{\cftsecpagefont}{\bfseries}  % 小节页码字体
+\renewcommand{\cftsubsecpagefont}{\bfseries}  % 子小节页码字体
+\renewcommand{\cftsubsubsecpagefont}{\bfseries}  % 子子小节页码字体
+% 设置页面布局
+\pagestyle{fancy}
+% 清除默认的页眉和页脚设置
+\fancyhf{}
+% 设置页脚
+\fancyfoot[L]{苏睿熹}  % 左侧自定义文本
+\fancyfoot[C]{数值计算方法笔记}  % 中间自定义文本
+\fancyfoot[R]{跳转到\hyperref[toc]{目录}}  % 右侧自定义文本
+% 设置页脚线的长度
+\renewcommand{\footrulewidth}{0.4pt}  % 设置页脚线的粗细
+\renewcommand{\headwidth}{\textwidth} % 设置页眉线的长度为文本宽度
+% 设置页眉
+\fancyhead[L]{\rightmark}  % 显示当前小节名称
+\fancyhead[R]{\thepage}    % 显示页码
+% 设置页眉线的长度
+\renewcommand{\headrulewidth}{0.4pt}  % 设置页眉线的粗细
+\renewcommand{\headwidth}{\textwidth} % 设置页眉线的长度为文本宽度
+% 重新定义 \chaptermark 和 \sectionmark
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+% 设置标题与图像之间的间距
+\setlength{\abovecaptionskip}{5pt}  % 标题在图像上方的间距
+\setlength{\belowcaptionskip}{0pt}  % 标题在图像下方的间距
+\fvset{breaklines=true,
+    frame=lines
+}
+\setlength{\parskip}{0pt}    % 设置段落之间的间距
+\setlist[itemize,1]{left=0pt}
+\setlist[itemize,2]{left=1pt}
+\setlist[itemize,3]{left=1pt}
+% 定义一个命令来设置图片的透明度
+\let\oldincludegraphics\includegraphics
+\renewcommand{\includegraphics}[2][]{%
+  \begin{tikzpicture}
+    \node[opacity=0.9] {\oldincludegraphics[#1]{#2}};
+  \end{tikzpicture}%
+}
+% 设置页边距
+\geometry{
+    left=2cm,         % 左边距
+    right=2cm,        % 右边距
+    top=2.5cm,          % 上边距
+    bottom=2.5cm        % 下边距
+}
+\lstset{
+  language=Python,      % 语言类型
+  basicstyle=\tt, %使用teletype字体
+}
+% 重新定义 \maketitle 命令
+\pretitle{\begin{center}\LARGE\bfseries\color{blue}}
+\posttitle{\end{center}}
+% 重定义 \textbf 命令
+\let\oldtextbf\textbf
+\renewcommand{\textbf}[1]{\textcolor{myblue}{\oldtextbf{#1}}}
+% 重定义 \emph 命令
+\let\oldemph\emph
+\renewcommand{\emph}[1]{\textcolor{mypink}{\oldemph{#1}}}
+\titleformat{\section}
+  {\color{myblue}\bfseries\Large}
+  {\thesection}
+  {1em}
+  {}
+\titleformat{\subsection}
+  {\color{myblue}\bfseries\large}
+  {\thesubsection}
+  {1em}
+  {}
+\titleformat{\subsubsection}
+  {\color{myblue}\bfseries\normalsize}
+  {\thesubsubsection}
+  {1em}
+  {}
+% 定义一个带有较小字体的 mdframed 环境
+\newenvironment{smallmdframed}
+  {\begin{mdframed}[linewidth=0pt, backgroundcolor=pink!20]\small}
+  {\end{mdframed}}
+
+\title{数值计算笔记：中大2022人工智能学院课程}
+\date{}
+
+\begin{document}
+\begin{minipage}[t]{\textwidth}
+    \vspace{-0.5cm}
+    \begin{center}
+        \vspace{-1.5cm} % 减少间距
+        \includegraphics[width=0.2\textwidth]{img/sysu.jpg}\\
+        \vspace{-1.5cm} % 减少间距
+    \end{center}
+    \maketitle
+    \vspace{-4cm} % 减少间距
+\end{minipage}
+\vspace{-0.8cm}
+
+\section{求解线性方程组的迭代方法}
+
+\begin{figure}[th]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img/1321screenshot003}
+	\label{fig:1321screenshot003}
+\end{figure}
+
+\begin{figure}[th]
+	\centering
+	\includegraphics[width=0.8\linewidth]{img/1321screenshot004}
+	\label{fig:1321screenshot004}
+\end{figure}
+
+\begin{figure}[th]
+	\centering
+	\includegraphics[width=0.9\linewidth]{img/1321screenshot005}
+	\label{fig:1321screenshot005}
+\end{figure}
+
+\begin{figure}[th]
+	\centering
+	\includegraphics[width=\linewidth]{img/1321screenshot006}
+	\label{fig:1321screenshot006}
+\end{figure}
+
+\end{document}

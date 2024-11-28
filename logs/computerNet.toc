@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}杂七杂八零碎知识点}{1}{section.1}%
+\contentsline {section}{\numberline {2}零碎问题以及解答}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}如何逐步构建可靠数据传输协议？}{2}{subsection.2.1}%
+\contentsline {section}{\numberline {3}数据链路层}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}数据链路层的功能}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}组帧（封装成帧）}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}差错控制}{5}{subsection.3.3}%
+\contentsline {section}{\numberline {4}网络层}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}网络层的功能}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}IPv4}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}IPv6}{7}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}路由算法与路由协议}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}暂存内容：未区分小结}{7}{subsection.4.5}%
+\contentsline {section}{\numberline {A}附录1：协议表}{9}{appendix.A}%
